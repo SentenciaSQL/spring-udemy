@@ -1,0 +1,87 @@
+<ul class="alert alert-danger" *ngIf="errores?.length > 0">
+  <li *ngFor="let err of errores">
+    {{ err }}
+  </li>
+</ul>
+
+<div class="card bg-dark text-white">
+  <div class="card-header">
+    {{ titulo }}
+  </div>
+  <div class="card-body">
+    <form #forma="ngForm" novalidate="">
+      <div class="form-group row">
+        <label for="nombre" class="col-form-label col-sm-2">Nombre</label>
+        <div class="col-sm-6">
+          <!--
+            [ngClass]="{'is-invalid': (nombre.errors?.minlength || forma.submitted && nombre.errors?.required) && nombre.touched, 'is-valid': nombre.valid}"
+            required minlength="4"
+            -->
+          <input
+
+              type="text" class="form-control" id="nombre" [(ngModel)]="cliente.nombre" #nombre="ngModel" name="nombre" />
+              <!-- <label *ngIf="forma.submitted && nombre.errors?.required" class="text-danger">
+               Este campo es requerido.
+             </label>
+             <label *ngIf="nombre.errors?.minlength" class="text-danger">
+               Por lo menos {{ nombre.errors.minlength.requiredLength }} careacters.
+             </label> -->
+        </div>
+      </div>
+
+      <!--
+      [ngClass]="{'is-invalid': (forma.submitted && apellido.errors?.required) && apellido.touched, 'is-valid': apellido.valid}"
+      required
+        -->
+      <div class="form-group row">
+        <label for="apellido" class="col-form-label col-sm-2">Apellido</label>
+        <div class="col-sm-6">
+          <input
+
+            type="text" class="form-control" id="apellido" [(ngModel)]="cliente.apellido" name="apellido"  #apellido="ngModel" />
+            <!-- <label *ngIf="forma.submitted && apellido.errors?.required" class="text-danger">
+              Este campo es requerido.
+            </label> -->
+        </div>
+      </div>
+
+      <!--
+      [ngClass]="{'is-invalid': (forma.submitted && email.errors?.required) && email.touched, 'is-valid': email.valid}"
+      required email
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+        -->
+      <div class="form-group row">
+        <label for="email" class="col-form-label col-sm-2">Email</label>
+        <div class="col-sm-6">
+          <input
+
+            type="text" class="form-control" id="email" [(ngModel)]="cliente.email" name="email"  #email="ngModel" />
+            <!-- <div *ngIf="forma.submitted && email.errors?.required" class="text-danger">
+              Este campo es requerido.
+            </div>
+            <div *ngIf="email.errors?.pattern" class="text-danger">
+              El correo es invalido
+            </div> -->
+        </div>
+      </div>
+
+
+      <div class="form-group row">
+        <label for="createdAt" class="col-form-label col-sm-2">Fecha</label>
+        <div class="col-sm-6">
+          <input  type="date" class="form-control" id="createdAt" [(ngModel)]="cliente.createdAt" name="createdAt" />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-6">
+          <button type="submit" class="btn btn-primary" (click)="create(forma)" *ngIf="!cliente.id else elseBlock" [disabled]="!forma.form.valid">Crear</button>
+
+          <ng-template #elseBlock>
+              <button type="submit" class="btn btn-primary" (click)="update(forma)" [disabled]="!forma.form.valid">Editar</button>
+          </ng-template>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
