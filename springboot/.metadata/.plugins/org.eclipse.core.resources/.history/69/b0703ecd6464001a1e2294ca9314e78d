@@ -1,0 +1,5 @@
+package com.formulario.springboot.web.app.controllers;
+
+public class GreetingController {
+
+}

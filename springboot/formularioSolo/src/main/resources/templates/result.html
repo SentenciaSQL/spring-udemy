@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Datos</h1>
+<label th:text="'Name: ' + ${user.name} + ' ' + ${user.lastname}"></label><br>
+<label th:text="'Age: ' + ${user.age}"></label><br>
+<a th:href="@{/user}">Volver</a>
+</body>
+</html>

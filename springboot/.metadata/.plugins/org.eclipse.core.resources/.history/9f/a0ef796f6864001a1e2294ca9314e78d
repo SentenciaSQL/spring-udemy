@@ -1,0 +1,5 @@
+package com.formulario.springboot.web.app.models;
+
+public class Greeting {
+
+}
