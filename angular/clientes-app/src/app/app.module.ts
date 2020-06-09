@@ -10,6 +10,12 @@ import { DirectivasComponent } from './components/directivas/directivas.componen
 import { HeaderComponent } from './components/shared/header/header.component';
 import { FormComponent } from './components/clientes/form.component';
 import { PaginatorComponent } from './components/shared/paginator/paginator.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatMomentDateModule } from '@angular/material-moment-adapter';
+import { MAT_DATE_LOCALE } from '@angular/material/core';
+import { DetalleComponent } from './components/clientes/detalle/detalle.component';
 
 @NgModule({
   declarations: [
@@ -18,15 +24,19 @@ import { PaginatorComponent } from './components/shared/paginator/paginator.comp
     DirectivasComponent,
     HeaderComponent,
     FormComponent,
-    PaginatorComponent
+    PaginatorComponent,
+    DetalleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatDatepickerModule,
+    MatMomentDateModule
   ],
-  providers: [],
+  providers: [{provide: MAT_DATE_LOCALE, useValue: 'es-DO'},],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

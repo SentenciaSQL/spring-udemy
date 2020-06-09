@@ -1,7 +1,0 @@
-package com.bolsadeideas.springboot.backend.apirest.angular.models.dao;
-
-import org.springframework.data.repository.CrudRepository;
-
-public interface IClienteDao extends CrudRepository<T, ID> {
-
-}
