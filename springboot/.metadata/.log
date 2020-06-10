@@ -13109,3 +13109,199 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SESSION 2020-06-10 09:28:25.269 -----------------------------------------------
+eclipse.buildId=4.5.1.202001211336-RELEASE
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-06-10 09:28:32.077
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2020-06-10 09:28:39.218
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-10 09:28:39.218
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@291cbe70,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6be422da,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:28:53.387
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:28:53.397
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@c651286[org.springframework.tooling.boot.ls:1.15.0.202001210741(id=631)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:28:53.420
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:28:53.812
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-10 09:29:00.836
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\EIS'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.571
+!MESSAGE Boot LS startup time from start to initialized: 17132ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.654
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.WRMjugsbisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.673
+!MESSAGE subscribing to classpath changes: sts4.classpath.WRMjugsb isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.689
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.705
+!MESSAGE subsribers = {sts4.classpath.WRMjugsb=Send Classpath Notifications(101)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.715
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.732
+!MESSAGE project spring-boot-backend-apirest-angular ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.744
+!MESSAGE project formulario ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.755
+!MESSAGE Preparing classpath changed notification spring-boot-backend-apirest-angular
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.766
+!MESSAGE project formulario SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.789
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.800
+!MESSAGE project formularioSolo ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.808
+!MESSAGE project formularioSolo SKIPPED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.817
+!MESSAGE project spring-boot-backend-apirest ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.824
+!MESSAGE classpath=97 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.833
+!MESSAGE project spring-boot-data-jpa ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.841
+!MESSAGE buffering callback sts4.classpath.WRMjugsb spring-boot-backend-apirest-angular false 97
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.849
+!MESSAGE project spring-boot-di ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.858
+!MESSAGE Preparing classpath changed notification spring-boot-backend-apirest
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.866
+!MESSAGE project spring-boot-form ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.875
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.885
+!MESSAGE project spring-boot-web ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.894
+!MESSAGE classpath=114 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.903
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.917
+!MESSAGE buffering callback sts4.classpath.WRMjugsb spring-boot-backend-apirest false 114
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.927
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.WRMjugsb => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.935
+!MESSAGE Preparing classpath changed notification spring-boot-data-jpa
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.945
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.966
+!MESSAGE classpath=104 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.980
+!MESSAGE buffering callback sts4.classpath.WRMjugsb spring-boot-data-jpa false 104
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:10.990
+!MESSAGE Preparing classpath changed notification spring-boot-di
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:11.000
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:11.014
+!MESSAGE classpath=78 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:11.026
+!MESSAGE buffering callback sts4.classpath.WRMjugsb spring-boot-di false 78
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:11.035
+!MESSAGE Preparing classpath changed notification spring-boot-form
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:11.043
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:11.057
+!MESSAGE classpath=78 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:11.069
+!MESSAGE buffering callback sts4.classpath.WRMjugsb spring-boot-form false 78
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:11.076
+!MESSAGE Preparing classpath changed notification spring-boot-web
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:11.085
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:11.097
+!MESSAGE classpath=78 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:11.109
+!MESSAGE buffering callback sts4.classpath.WRMjugsb spring-boot-web false 78
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:11.118
+!MESSAGE executing callback sts4.classpath.WRMjugsb 6 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 09:29:13.170
+!MESSAGE executing callback sts4.classpath.WRMjugsb FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2020-06-10 09:29:13.178
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:197)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:168)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui 2 2 2020-06-10 09:41:38.418
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
