@@ -136,3 +136,2141 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.ui 2 2 2020-06-10 10:25:03.275
 !MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+!SESSION 2020-06-10 10:26:17.009 -----------------------------------------------
+eclipse.buildId=4.6.2.202005250833-RELEASE
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.ui 2 0 2020-06-10 10:26:27.370
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-06-10 10:26:27.370
+!MESSAGE Defining a key binding with no key sequence has no effect: plug-in='org.springframework.ide.eclipse.boot.wizard', id='org.springframework.ide.eclipse.boot.wizard.addStarersSwitchHandler'
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-06-10 10:26:28.149
+!MESSAGE Creating XDG_CONFIG_HOME directory U:\.config failed
+!STACK 0
+java.nio.file.FileSystemException: U:\.config: Unable to determine if root directory exists
+	at java.nio.file.Files.createDirectories(Unknown Source)
+	at org.eclipse.jgit.util.SystemReader$Default.getXDGConfigHome(SystemReader.java:120)
+	at org.eclipse.jgit.util.SystemReader$Default.openJGitConfig(SystemReader.java:131)
+	at org.eclipse.jgit.util.SystemReader.getJGitConfig(SystemReader.java:348)
+	at org.eclipse.jgit.util.SystemReader.getSystemConfig(SystemReader.java:373)
+	at org.eclipse.jgit.util.SystemReader.getUserConfig(SystemReader.java:321)
+	at org.eclipse.egit.core.Activator$EclipseSystemReader.getUserConfig(Activator.java:1177)
+	at org.eclipse.jgit.util.Monitoring.registerMBean(Monitoring.java:54)
+	at org.eclipse.jgit.internal.storage.file.WindowCache.<init>(WindowCache.java:473)
+	at org.eclipse.jgit.internal.storage.file.WindowCache.reconfigure(WindowCache.java:362)
+	at org.eclipse.jgit.internal.storage.file.WindowCache.<clinit>(WindowCache.java:343)
+	at org.eclipse.jgit.storage.file.WindowCacheConfig.install(WindowCacheConfig.java:268)
+	at org.eclipse.egit.core.project.GitProjectData.reconfigureWindowCache(GitProjectData.java:428)
+	at org.eclipse.egit.core.Activator.start(Activator.java:260)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:456)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.egit.ui.Activator$RepositoryChangeScanner.<init>(Activator.java:632)
+	at org.eclipse.egit.ui.Activator.setupRepoChangeScanner(Activator.java:897)
+	at org.eclipse.egit.ui.Activator.start(Activator.java:348)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:477)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.services.WorkbenchServiceRegistry.getSourceProviders(WorkbenchServiceRegistry.java:170)
+	at org.eclipse.ui.internal.services.SourceProviderService.readRegistry(SourceProviderService.java:104)
+	at org.eclipse.ui.internal.Workbench$34.runWithException(Workbench.java:2340)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:36)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4561)
+	at org.eclipse.ui.internal.StartupThreading.runWithoutExceptions(StartupThreading.java:94)
+	at org.eclipse.ui.internal.Workbench.initializeDefaultServices(Workbench.java:2335)
+	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2811)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:646)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+
+!ENTRY org.eclipse.jface 2 0 2020-06-10 10:26:28.826
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-10 10:26:28.826
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@602c167e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@74c04377,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-10 10:26:32.728
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'U:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-06-10 10:34:33.732
+!MESSAGE Cannot save config file 'FileBasedConfig[U:\.jgitconfig]'
+!STACK 0
+java.io.IOException: Creating directories for U:\ failed
+	at org.eclipse.jgit.util.FileUtils.mkdirs(FileUtils.java:396)
+	at org.eclipse.jgit.internal.storage.file.LockFile.lock(LockFile.java:130)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.save(FileBasedConfig.java:219)
+	at org.eclipse.jgit.util.FS$FileStoreAttributes.saveToConfig(FS.java:594)
+	at org.eclipse.jgit.util.FS$FileStoreAttributes.lambda$1(FS.java:370)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 2 2 2020-06-10 10:35:19.065
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:35:30.063
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:35:30.655
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:35:34.007
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:35:34.999
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:35:36.926
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:35:39.060
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:35:39.787
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:35:40.327
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:35:40.807
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:35:47.405
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:35:48.475
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:35:49.592
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:35:53.146
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:35:56.764
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:35:58.612
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:35:59.832
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:36:03.419
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:36:21.109
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:36:38.728
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:36:39.873
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:36:42.951
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:36:46.194
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:36:56.237
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:36:57.638
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:36:58.285
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:37:00.002
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:37:01.608
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:37:03.657
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:37:07.292
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:37:09.186
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:37:16.600
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:37:21.469
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:37:23.269
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:37:58.234
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:37:59.449
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:01.962
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.103
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.120
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.136
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.151
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.168
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.184
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.200
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.217
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.233
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.249
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.263
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.279
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.294
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.310
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.325
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.354
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.373
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.391
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.410
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.433
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.450
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.471
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.492
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.511
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.530
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.547
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.565
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.584
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.603
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.623
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.643
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.665
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.689
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.711
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.732
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.750
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.766
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.782
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.801
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.822
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.842
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.860
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.879
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.897
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.916
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.943
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.960
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.977
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:03.994
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.010
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.025
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.040
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.055
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.070
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.086
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.101
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.119
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.134
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.156
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.181
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.204
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.222
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.239
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.256
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.274
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.294
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.314
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.331
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.347
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.364
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.382
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.400
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.417
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.438
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.456
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.474
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.494
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.510
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.525
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.541
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.556
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.571
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.586
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.602
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.617
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.631
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.644
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.658
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.672
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.685
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.699
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.713
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.728
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.742
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.756
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.771
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.786
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.800
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.818
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.840
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.861
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.879
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.899
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.915
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.932
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.948
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.963
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.980
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:04.996
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.009
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.023
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.038
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.052
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.067
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.082
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.097
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.112
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.127
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.143
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.159
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.175
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.191
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.204
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.219
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.233
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.247
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.262
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.276
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.290
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.303
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.318
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.337
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.356
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.376
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.394
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.411
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.427
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.444
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.459
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.473
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.488
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.501
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.515
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.529
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.544
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.557
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.571
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.584
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.597
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.610
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.624
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.637
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.652
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.665
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.680
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.693
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.707
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.721
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.737
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.751
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.771
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.791
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.809
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.827
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.843
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.859
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.874
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.890
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.904
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.919
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.933
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.946
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.961
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.976
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:05.992
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.006
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.019
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.034
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.049
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.063
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.079
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.095
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.109
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.124
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.138
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.153
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.169
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.185
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.200
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.215
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.236
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.260
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.284
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.307
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.326
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.345
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.363
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.382
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.404
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.424
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.440
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.455
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.471
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.487
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-06-10 10:38:06.504
+!MESSAGE IPackageFragmentRoot is missing, skipping javadoc/source attachment for project P/demo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:38:57.859
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:38:57.869
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@7fb2645b[org.springframework.tooling.boot.ls:1.18.0.202005250744(id=636)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:38:57.878
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:38:57.925
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.284
+!MESSAGE Boot LS startup time from start to initialized: 3382ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.343
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.nlhCVgikisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.361
+!MESSAGE Creating project sorter...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.380
+!MESSAGE Creating project sorter... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.400
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.416
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.429
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.465
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.486
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.nlhCVgik => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.520
+!MESSAGE classpath=96 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.547
+!MESSAGE buffering callback sts4.classpath.nlhCVgik spring-boot-backend-apirest-angular false 96
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.649
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.697
+!MESSAGE classpath=114 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.760
+!MESSAGE buffering callback sts4.classpath.nlhCVgik spring-boot-backend-apirest false 114
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.774
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.789
+!MESSAGE classpath=5 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.802
+!MESSAGE buffering callback sts4.classpath.nlhCVgik spring-boot-data-jpa false 5
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.817
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.830
+!MESSAGE classpath=5 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.841
+!MESSAGE buffering callback sts4.classpath.nlhCVgik spring-boot-di false 5
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.856
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.869
+!MESSAGE classpath=5 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.870
+!MESSAGE buffering callback sts4.classpath.nlhCVgik spring-boot-form false 5
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.879
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.890
+!MESSAGE classpath=5 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.900
+!MESSAGE buffering callback sts4.classpath.nlhCVgik spring-boot-web false 5
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:01.909
+!MESSAGE executing callback sts4.classpath.nlhCVgik 6 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:39:03.937
+!MESSAGE executing callback sts4.classpath.nlhCVgik FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2020-06-10 10:39:03.945
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:40:33.582
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:40:33.603
+!MESSAGE classpath=103 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:40:33.627
+!MESSAGE buffering callback sts4.classpath.nlhCVgik spring-boot-data-jpa false 103
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:40:33.639
+!MESSAGE executing callback sts4.classpath.nlhCVgik 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:40:33.658
+!MESSAGE executing callback sts4.classpath.nlhCVgik SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:40:37.116
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:40:37.147
+!MESSAGE classpath=77 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:40:37.167
+!MESSAGE buffering callback sts4.classpath.nlhCVgik spring-boot-di false 77
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:40:37.188
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:40:37.206
+!MESSAGE classpath=77 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:40:37.235
+!MESSAGE buffering callback sts4.classpath.nlhCVgik spring-boot-form false 77
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:40:37.249
+!MESSAGE executing callback sts4.classpath.nlhCVgik 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:40:37.272
+!MESSAGE executing callback sts4.classpath.nlhCVgik SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:40:37.425
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:40:37.450
+!MESSAGE classpath=77 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:40:37.465
+!MESSAGE buffering callback sts4.classpath.nlhCVgik spring-boot-web false 77
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:40:37.477
+!MESSAGE executing callback sts4.classpath.nlhCVgik 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:40:37.494
+!MESSAGE executing callback sts4.classpath.nlhCVgik SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:44:31.107
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:44:31.125
+!MESSAGE classpath=77 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:44:31.139
+!MESSAGE buffering callback sts4.classpath.nlhCVgik spring-boot-web false 77
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:44:31.151
+!MESSAGE executing callback sts4.classpath.nlhCVgik 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:44:31.172
+!MESSAGE executing callback sts4.classpath.nlhCVgik SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:44:31.288
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:44:31.303
+!MESSAGE classpath=77 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:44:31.313
+!MESSAGE buffering callback sts4.classpath.nlhCVgik spring-boot-form false 77
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:44:31.321
+!MESSAGE executing callback sts4.classpath.nlhCVgik 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:44:31.333
+!MESSAGE executing callback sts4.classpath.nlhCVgik SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:44:31.392
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:44:31.403
+!MESSAGE classpath=77 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:44:31.417
+!MESSAGE buffering callback sts4.classpath.nlhCVgik spring-boot-di false 77
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:44:31.424
+!MESSAGE executing callback sts4.classpath.nlhCVgik 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:44:31.434
+!MESSAGE executing callback sts4.classpath.nlhCVgik SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:44:31.520
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:44:31.535
+!MESSAGE classpath=103 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:44:31.547
+!MESSAGE buffering callback sts4.classpath.nlhCVgik spring-boot-data-jpa false 103
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:44:31.557
+!MESSAGE executing callback sts4.classpath.nlhCVgik 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:44:31.576
+!MESSAGE executing callback sts4.classpath.nlhCVgik SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:40.273
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.nlhCVgik
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:40.286
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.nlhCVgik
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:40.301
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:40.313
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.nlhCVgik => OK
+!SESSION 2020-06-10 10:47:44.812 -----------------------------------------------
+eclipse.buildId=4.6.2.202005250833-RELEASE
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.ui 2 0 2020-06-10 10:47:49.650
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-06-10 10:47:49.650
+!MESSAGE Defining a key binding with no key sequence has no effect: plug-in='org.springframework.ide.eclipse.boot.wizard', id='org.springframework.ide.eclipse.boot.wizard.addStarersSwitchHandler'
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-06-10 10:47:50.425
+!MESSAGE Creating XDG_CONFIG_HOME directory U:\.config failed
+!STACK 0
+java.nio.file.FileSystemException: U:\.config: Unable to determine if root directory exists
+	at java.nio.file.Files.createDirectories(Unknown Source)
+	at org.eclipse.jgit.util.SystemReader$Default.getXDGConfigHome(SystemReader.java:120)
+	at org.eclipse.jgit.util.SystemReader$Default.openJGitConfig(SystemReader.java:131)
+	at org.eclipse.jgit.util.SystemReader.getJGitConfig(SystemReader.java:348)
+	at org.eclipse.jgit.util.SystemReader.getSystemConfig(SystemReader.java:373)
+	at org.eclipse.jgit.util.SystemReader.getUserConfig(SystemReader.java:321)
+	at org.eclipse.egit.core.Activator$EclipseSystemReader.getUserConfig(Activator.java:1177)
+	at org.eclipse.jgit.util.Monitoring.registerMBean(Monitoring.java:54)
+	at org.eclipse.jgit.internal.storage.file.WindowCache.<init>(WindowCache.java:473)
+	at org.eclipse.jgit.internal.storage.file.WindowCache.reconfigure(WindowCache.java:362)
+	at org.eclipse.jgit.internal.storage.file.WindowCache.<clinit>(WindowCache.java:343)
+	at org.eclipse.jgit.storage.file.WindowCacheConfig.install(WindowCacheConfig.java:268)
+	at org.eclipse.egit.core.project.GitProjectData.reconfigureWindowCache(GitProjectData.java:428)
+	at org.eclipse.egit.core.Activator.start(Activator.java:260)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:456)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.egit.ui.Activator$RepositoryChangeScanner.<init>(Activator.java:632)
+	at org.eclipse.egit.ui.Activator.setupRepoChangeScanner(Activator.java:897)
+	at org.eclipse.egit.ui.Activator.start(Activator.java:348)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:477)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.services.WorkbenchServiceRegistry.getSourceProviders(WorkbenchServiceRegistry.java:170)
+	at org.eclipse.ui.internal.services.SourceProviderService.readRegistry(SourceProviderService.java:104)
+	at org.eclipse.ui.internal.Workbench$34.runWithException(Workbench.java:2340)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:36)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4561)
+	at org.eclipse.ui.internal.StartupThreading.runWithoutExceptions(StartupThreading.java:94)
+	at org.eclipse.ui.internal.Workbench.initializeDefaultServices(Workbench.java:2335)
+	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2811)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:646)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+
+!ENTRY org.eclipse.jface 2 0 2020-06-10 10:47:51.070
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-10 10:47:51.070
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@306c9b2c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1ab28416,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:55.640
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:55.649
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@7860a014[org.springframework.tooling.boot.ls:1.18.0.202005250744(id=636)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:55.657
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:55.682
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-10 10:47:58.377
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'U:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.234
+!MESSAGE Boot LS startup time from start to initialized: 3564ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.387
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.RUFCJApnisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.448
+!MESSAGE Creating project sorter...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.475
+!MESSAGE Creating project sorter... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.502
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.536
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.557
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.573
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.RUFCJApn => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.590
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.621
+!MESSAGE classpath=96 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.639
+!MESSAGE buffering callback sts4.classpath.RUFCJApn spring-boot-backend-apirest-angular false 96
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.684
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.722
+!MESSAGE classpath=114 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.735
+!MESSAGE buffering callback sts4.classpath.RUFCJApn spring-boot-backend-apirest false 114
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.746
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.764
+!MESSAGE classpath=103 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.780
+!MESSAGE buffering callback sts4.classpath.RUFCJApn spring-boot-data-jpa false 103
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.799
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.842
+!MESSAGE classpath=77 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.860
+!MESSAGE buffering callback sts4.classpath.RUFCJApn spring-boot-di false 77
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.870
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.888
+!MESSAGE classpath=77 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.904
+!MESSAGE buffering callback sts4.classpath.RUFCJApn spring-boot-form false 77
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.920
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.939
+!MESSAGE classpath=77 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.954
+!MESSAGE buffering callback sts4.classpath.RUFCJApn spring-boot-web false 77
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:47:59.969
+!MESSAGE executing callback sts4.classpath.RUFCJApn 6 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:48:00.109
+!MESSAGE executing callback sts4.classpath.RUFCJApn SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-06-10 10:48:01.703
+!MESSAGE Cannot save config file 'FileBasedConfig[U:\.jgitconfig]'
+!STACK 0
+java.io.IOException: Creating directories for U:\ failed
+	at org.eclipse.jgit.util.FileUtils.mkdirs(FileUtils.java:396)
+	at org.eclipse.jgit.internal.storage.file.LockFile.lock(LockFile.java:130)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.save(FileBasedConfig.java:219)
+	at org.eclipse.jgit.util.FS$FileStoreAttributes.saveToConfig(FS.java:594)
+	at org.eclipse.jgit.util.FS$FileStoreAttributes.lambda$1(FS.java:370)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 2 2 2020-06-10 10:49:18.800
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:49:29.818
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:49:29.838
+!MESSAGE classpath=96 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:49:29.852
+!MESSAGE buffering callback sts4.classpath.RUFCJApn spring-boot-backend-apirest-angular false 96
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:49:29.860
+!MESSAGE executing callback sts4.classpath.RUFCJApn 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 10:49:29.875
+!MESSAGE executing callback sts4.classpath.RUFCJApn SUCCESS [done]
+
+!ENTRY org.eclipse.debug.ui 4 0 2020-06-10 11:20:19.472
+!MESSAGE Launch shortcut 'org.eclipse.jdt.junit.junitShortcut' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error evaluating Property [org.eclipse.jdt.junit.canLaunchAsJUnit, type=class org.eclipse.jdt.internal.core.CompilationUnit, tester=org.eclipse.jdt.internal.junit.JUnitPropertyTester@1bbcbe22]
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:68)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:34)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.AdaptExpression.evaluate(AdaptExpression.java:118)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:165)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:58)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:280)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableConfigurationTypes(LaunchConfigurationManager.java:727)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableLaunchConfigurations(LaunchConfigurationManager.java:765)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getParticipatingLaunchConfigurations(LaunchingResourceManager.java:509)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:328)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:248)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:146)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jdt.internal.compiler.problem.AbortCompilation: Pb(324) The type java.lang.annotation.Target cannot be resolved. It is indirectly referenced from required .class files
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:162)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:229)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.handle(ProblemReporter.java:2605)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.isClassPathCorrect(ProblemReporter.java:5061)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getResolvedType(LookupEnvironment.java:1636)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getResolvedJavaBaseType(LookupEnvironment.java:1643)
+	at org.eclipse.jdt.internal.compiler.lookup.AnnotationBinding.buildTargetAnnotation(AnnotationBinding.java:134)
+	at org.eclipse.jdt.internal.compiler.lookup.AnnotationBinding.addStandardAnnotations(AnnotationBinding.java:79)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.retrieveAnnotations(BinaryTypeBinding.java:1691)
+	at org.eclipse.jdt.internal.compiler.lookup.ReferenceBinding.getAnnotations(ReferenceBinding.java:1052)
+	at org.eclipse.jdt.core.dom.TypeBinding.getAnnotations(TypeBinding.java:122)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder$Annotation.matchesNameInAnnotationHierarchy(JUnit5TestFinder.java:181)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder$Annotation.annotates(JUnit5TestFinder.java:160)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder$Annotation.annotatesTypeOrSuperTypes(JUnit5TestFinder.java:111)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder.isTest(JUnit5TestFinder.java:300)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder.internalIsTest(JUnit5TestFinder.java:280)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder.isTest(JUnit5TestFinder.java:251)
+	at org.eclipse.jdt.internal.junit.util.CoreTestSearchEngine.isTestOrTestSuite(CoreTestSearchEngine.java:60)
+	at org.eclipse.jdt.internal.junit.JUnitPropertyTester.isJUnitTest(JUnitPropertyTester.java:122)
+	at org.eclipse.jdt.internal.junit.JUnitPropertyTester.canLaunchAsJUnitTest(JUnitPropertyTester.java:88)
+	at org.eclipse.jdt.internal.junit.JUnitPropertyTester.test(JUnitPropertyTester.java:72)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	... 19 more
+!SUBENTRY 1 org.eclipse.core.expressions 4 0 2020-06-10 11:20:19.473
+!MESSAGE Error evaluating Property [org.eclipse.jdt.junit.canLaunchAsJUnit, type=class org.eclipse.jdt.internal.core.CompilationUnit, tester=org.eclipse.jdt.internal.junit.JUnitPropertyTester@1bbcbe22]
+!STACK 0
+org.eclipse.jdt.internal.compiler.problem.AbortCompilation: Pb(324) The type java.lang.annotation.Target cannot be resolved. It is indirectly referenced from required .class files
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:162)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemHandler.handle(ProblemHandler.java:229)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.handle(ProblemReporter.java:2605)
+	at org.eclipse.jdt.internal.compiler.problem.ProblemReporter.isClassPathCorrect(ProblemReporter.java:5061)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getResolvedType(LookupEnvironment.java:1636)
+	at org.eclipse.jdt.internal.compiler.lookup.LookupEnvironment.getResolvedJavaBaseType(LookupEnvironment.java:1643)
+	at org.eclipse.jdt.internal.compiler.lookup.AnnotationBinding.buildTargetAnnotation(AnnotationBinding.java:134)
+	at org.eclipse.jdt.internal.compiler.lookup.AnnotationBinding.addStandardAnnotations(AnnotationBinding.java:79)
+	at org.eclipse.jdt.internal.compiler.lookup.BinaryTypeBinding.retrieveAnnotations(BinaryTypeBinding.java:1691)
+	at org.eclipse.jdt.internal.compiler.lookup.ReferenceBinding.getAnnotations(ReferenceBinding.java:1052)
+	at org.eclipse.jdt.core.dom.TypeBinding.getAnnotations(TypeBinding.java:122)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder$Annotation.matchesNameInAnnotationHierarchy(JUnit5TestFinder.java:181)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder$Annotation.annotates(JUnit5TestFinder.java:160)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder$Annotation.annotatesTypeOrSuperTypes(JUnit5TestFinder.java:111)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder.isTest(JUnit5TestFinder.java:300)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder.internalIsTest(JUnit5TestFinder.java:280)
+	at org.eclipse.jdt.internal.junit.launcher.JUnit5TestFinder.isTest(JUnit5TestFinder.java:251)
+	at org.eclipse.jdt.internal.junit.util.CoreTestSearchEngine.isTestOrTestSuite(CoreTestSearchEngine.java:60)
+	at org.eclipse.jdt.internal.junit.JUnitPropertyTester.isJUnitTest(JUnitPropertyTester.java:122)
+	at org.eclipse.jdt.internal.junit.JUnitPropertyTester.canLaunchAsJUnitTest(JUnitPropertyTester.java:88)
+	at org.eclipse.jdt.internal.junit.JUnitPropertyTester.test(JUnitPropertyTester.java:72)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:103)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:34)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.AdaptExpression.evaluate(AdaptExpression.java:118)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:165)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:81)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:55)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:58)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:280)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableConfigurationTypes(LaunchConfigurationManager.java:727)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.getApplicableLaunchConfigurations(LaunchConfigurationManager.java:765)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getParticipatingLaunchConfigurations(LaunchingResourceManager.java:509)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.getLabel(LaunchingResourceManager.java:328)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager.computeLabels(LaunchingResourceManager.java:248)
+	at org.eclipse.debug.internal.ui.contextlaunching.LaunchingResourceManager$1$1.run(LaunchingResourceManager.java:146)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:19.818
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.RUFCJApn
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:19.831
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.RUFCJApn
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:19.843
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:19.853
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.RUFCJApn => OK
+!SESSION 2020-06-10 11:21:26.325 -----------------------------------------------
+eclipse.buildId=4.6.2.202005250833-RELEASE
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.ui 2 0 2020-06-10 11:21:31.720
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-06-10 11:21:31.720
+!MESSAGE Defining a key binding with no key sequence has no effect: plug-in='org.springframework.ide.eclipse.boot.wizard', id='org.springframework.ide.eclipse.boot.wizard.addStarersSwitchHandler'
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-06-10 11:21:32.476
+!MESSAGE Creating XDG_CONFIG_HOME directory U:\.config failed
+!STACK 0
+java.nio.file.FileSystemException: U:\.config: Unable to determine if root directory exists
+	at java.nio.file.Files.createDirectories(Unknown Source)
+	at org.eclipse.jgit.util.SystemReader$Default.getXDGConfigHome(SystemReader.java:120)
+	at org.eclipse.jgit.util.SystemReader$Default.openJGitConfig(SystemReader.java:131)
+	at org.eclipse.jgit.util.SystemReader.getJGitConfig(SystemReader.java:348)
+	at org.eclipse.jgit.util.SystemReader.getSystemConfig(SystemReader.java:373)
+	at org.eclipse.jgit.util.SystemReader.getUserConfig(SystemReader.java:321)
+	at org.eclipse.egit.core.Activator$EclipseSystemReader.getUserConfig(Activator.java:1177)
+	at org.eclipse.jgit.util.Monitoring.registerMBean(Monitoring.java:54)
+	at org.eclipse.jgit.internal.storage.file.WindowCache.<init>(WindowCache.java:473)
+	at org.eclipse.jgit.internal.storage.file.WindowCache.reconfigure(WindowCache.java:362)
+	at org.eclipse.jgit.internal.storage.file.WindowCache.<clinit>(WindowCache.java:343)
+	at org.eclipse.jgit.storage.file.WindowCacheConfig.install(WindowCacheConfig.java:268)
+	at org.eclipse.egit.core.project.GitProjectData.reconfigureWindowCache(GitProjectData.java:428)
+	at org.eclipse.egit.core.Activator.start(Activator.java:260)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:456)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.egit.ui.Activator$RepositoryChangeScanner.<init>(Activator.java:632)
+	at org.eclipse.egit.ui.Activator.setupRepoChangeScanner(Activator.java:897)
+	at org.eclipse.egit.ui.Activator.start(Activator.java:348)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:477)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.services.WorkbenchServiceRegistry.getSourceProviders(WorkbenchServiceRegistry.java:170)
+	at org.eclipse.ui.internal.services.SourceProviderService.readRegistry(SourceProviderService.java:104)
+	at org.eclipse.ui.internal.Workbench$34.runWithException(Workbench.java:2340)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:36)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4561)
+	at org.eclipse.ui.internal.StartupThreading.runWithoutExceptions(StartupThreading.java:94)
+	at org.eclipse.ui.internal.Workbench.initializeDefaultServices(Workbench.java:2335)
+	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2811)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:646)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+
+!ENTRY org.eclipse.jface 2 0 2020-06-10 11:21:33.077
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-10 11:21:33.077
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@52efb338,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@64508788,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:37.644
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:37.653
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@76b6bad3[org.springframework.tooling.boot.ls:1.18.0.202005250744(id=636)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:37.663
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:37.695
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-10 11:21:40.248
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'U:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:40.338
+!MESSAGE Boot LS startup time from start to initialized: 2659ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:40.438
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.BeYuFwgyisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:40.466
+!MESSAGE Creating project sorter...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:40.487
+!MESSAGE Creating project sorter... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:40.527
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:40.577
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:40.599
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:40.625
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.BeYuFwgy => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:40.642
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:40.673
+!MESSAGE classpath=96 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:40.696
+!MESSAGE buffering callback sts4.classpath.BeYuFwgy spring-boot-backend-apirest-angular false 96
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:40.713
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:40.745
+!MESSAGE classpath=114 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:40.786
+!MESSAGE buffering callback sts4.classpath.BeYuFwgy spring-boot-backend-apirest false 114
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:40.812
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:40.853
+!MESSAGE classpath=103 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:40.897
+!MESSAGE buffering callback sts4.classpath.BeYuFwgy spring-boot-data-jpa false 103
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:40.932
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:40.967
+!MESSAGE classpath=77 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:41.045
+!MESSAGE buffering callback sts4.classpath.BeYuFwgy spring-boot-di false 77
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:41.081
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:41.118
+!MESSAGE classpath=77 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:41.171
+!MESSAGE buffering callback sts4.classpath.BeYuFwgy spring-boot-form false 77
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:41.343
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:41.383
+!MESSAGE classpath=77 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:41.413
+!MESSAGE buffering callback sts4.classpath.BeYuFwgy spring-boot-web false 77
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:41.455
+!MESSAGE executing callback sts4.classpath.BeYuFwgy 6 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:21:41.607
+!MESSAGE executing callback sts4.classpath.BeYuFwgy SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-06-10 11:21:43.607
+!MESSAGE Cannot save config file 'FileBasedConfig[U:\.jgitconfig]'
+!STACK 0
+java.io.IOException: Creating directories for U:\ failed
+	at org.eclipse.jgit.util.FileUtils.mkdirs(FileUtils.java:396)
+	at org.eclipse.jgit.internal.storage.file.LockFile.lock(LockFile.java:130)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.save(FileBasedConfig.java:219)
+	at org.eclipse.jgit.util.FS$FileStoreAttributes.saveToConfig(FS.java:594)
+	at org.eclipse.jgit.util.FS$FileStoreAttributes.lambda$1(FS.java:370)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 2 2 2020-06-10 11:22:18.114
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:25:09.069
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:25:09.086
+!MESSAGE classpath=121 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:25:09.101
+!MESSAGE buffering callback sts4.classpath.BeYuFwgy spring-boot-data-jpa false 121
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:25:09.109
+!MESSAGE executing callback sts4.classpath.BeYuFwgy 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:25:09.127
+!MESSAGE executing callback sts4.classpath.BeYuFwgy SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:29:12.820
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:29:12.837
+!MESSAGE classpath=121 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:29:12.848
+!MESSAGE buffering callback sts4.classpath.BeYuFwgy spring-boot-data-jpa false 121
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:29:12.858
+!MESSAGE executing callback sts4.classpath.BeYuFwgy 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:29:12.884
+!MESSAGE executing callback sts4.classpath.BeYuFwgy SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:29:16.605
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:29:16.624
+!MESSAGE classpath=121 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:29:16.640
+!MESSAGE buffering callback sts4.classpath.BeYuFwgy spring-boot-data-jpa false 121
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:29:16.649
+!MESSAGE executing callback sts4.classpath.BeYuFwgy 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:29:16.667
+!MESSAGE executing callback sts4.classpath.BeYuFwgy SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:42:21.906
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:42:21.924
+!MESSAGE classpath=121 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:42:21.939
+!MESSAGE buffering callback sts4.classpath.BeYuFwgy spring-boot-data-jpa false 121
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:42:21.947
+!MESSAGE executing callback sts4.classpath.BeYuFwgy 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:42:21.964
+!MESSAGE executing callback sts4.classpath.BeYuFwgy SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:42:35.935
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:42:35.949
+!MESSAGE classpath=121 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:42:35.966
+!MESSAGE buffering callback sts4.classpath.BeYuFwgy spring-boot-data-jpa false 121
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:42:35.977
+!MESSAGE executing callback sts4.classpath.BeYuFwgy 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:42:35.996
+!MESSAGE executing callback sts4.classpath.BeYuFwgy SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:43:14.862
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:43:14.878
+!MESSAGE buffering callback sts4.classpath.BeYuFwgy spring-boot-di true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:43:14.890
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:43:14.898
+!MESSAGE buffering callback sts4.classpath.BeYuFwgy spring-boot-form true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:43:14.906
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:43:14.914
+!MESSAGE buffering callback sts4.classpath.BeYuFwgy spring-boot-web true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:43:14.922
+!MESSAGE executing callback sts4.classpath.BeYuFwgy 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:43:14.942
+!MESSAGE executing callback sts4.classpath.BeYuFwgy SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:43:28.095
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:43:28.105
+!MESSAGE buffering callback sts4.classpath.BeYuFwgy spring-boot-backend-apirest true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:43:28.118
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:43:28.129
+!MESSAGE buffering callback sts4.classpath.BeYuFwgy spring-boot-backend-apirest-angular true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:43:28.138
+!MESSAGE executing callback sts4.classpath.BeYuFwgy 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:43:28.153
+!MESSAGE executing callback sts4.classpath.BeYuFwgy SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:52:28.655
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:52:28.665
+!MESSAGE classpath=1 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:52:28.674
+!MESSAGE buffering callback sts4.classpath.BeYuFwgy spring-boot-backend-apirest-angular9 false 1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:52:28.683
+!MESSAGE executing callback sts4.classpath.BeYuFwgy 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:52:30.693
+!MESSAGE executing callback sts4.classpath.BeYuFwgy FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2020-06-10 11:52:30.702
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:52:30.714
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:52:30.734
+!MESSAGE classpath=110 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:52:30.748
+!MESSAGE buffering callback sts4.classpath.BeYuFwgy spring-boot-backend-apirest-angular9 false 110
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:52:30.758
+!MESSAGE executing callback sts4.classpath.BeYuFwgy 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:52:32.499
+!MESSAGE executing callback sts4.classpath.BeYuFwgy SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:52:32.511
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:52:32.540
+!MESSAGE classpath=110 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:52:32.560
+!MESSAGE buffering callback sts4.classpath.BeYuFwgy spring-boot-backend-apirest-angular9 false 110
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:52:32.571
+!MESSAGE executing callback sts4.classpath.BeYuFwgy 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 11:52:32.590
+!MESSAGE executing callback sts4.classpath.BeYuFwgy SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:09:49.339
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.BeYuFwgy
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:09:49.350
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.BeYuFwgy
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:09:49.360
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:09:49.370
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.BeYuFwgy => OK
+!SESSION 2020-06-10 12:38:59.909 -----------------------------------------------
+eclipse.buildId=4.6.2.202005250833-RELEASE
+java.version=1.8.0_251
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.ui 2 0 2020-06-10 12:39:09.122
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-06-10 12:39:09.122
+!MESSAGE Defining a key binding with no key sequence has no effect: plug-in='org.springframework.ide.eclipse.boot.wizard', id='org.springframework.ide.eclipse.boot.wizard.addStarersSwitchHandler'
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-06-10 12:39:11.783
+!MESSAGE Creating XDG_CONFIG_HOME directory U:\.config failed
+!STACK 0
+java.nio.file.FileSystemException: U:\.config: Unable to determine if root directory exists
+	at java.nio.file.Files.createDirectories(Unknown Source)
+	at org.eclipse.jgit.util.SystemReader$Default.getXDGConfigHome(SystemReader.java:120)
+	at org.eclipse.jgit.util.SystemReader$Default.openJGitConfig(SystemReader.java:131)
+	at org.eclipse.jgit.util.SystemReader.getJGitConfig(SystemReader.java:348)
+	at org.eclipse.jgit.util.SystemReader.getSystemConfig(SystemReader.java:373)
+	at org.eclipse.jgit.util.SystemReader.getUserConfig(SystemReader.java:321)
+	at org.eclipse.egit.core.Activator$EclipseSystemReader.getUserConfig(Activator.java:1177)
+	at org.eclipse.jgit.util.Monitoring.registerMBean(Monitoring.java:54)
+	at org.eclipse.jgit.internal.storage.file.WindowCache.<init>(WindowCache.java:473)
+	at org.eclipse.jgit.internal.storage.file.WindowCache.reconfigure(WindowCache.java:362)
+	at org.eclipse.jgit.internal.storage.file.WindowCache.<clinit>(WindowCache.java:343)
+	at org.eclipse.jgit.storage.file.WindowCacheConfig.install(WindowCacheConfig.java:268)
+	at org.eclipse.egit.core.project.GitProjectData.reconfigureWindowCache(GitProjectData.java:428)
+	at org.eclipse.egit.core.Activator.start(Activator.java:260)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:456)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.egit.ui.Activator$RepositoryChangeScanner.<init>(Activator.java:632)
+	at org.eclipse.egit.ui.Activator.setupRepoChangeScanner(Activator.java:897)
+	at org.eclipse.egit.ui.Activator.start(Activator.java:348)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:477)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.ui.internal.services.WorkbenchServiceRegistry.getSourceProviders(WorkbenchServiceRegistry.java:170)
+	at org.eclipse.ui.internal.services.SourceProviderService.readRegistry(SourceProviderService.java:104)
+	at org.eclipse.ui.internal.Workbench$34.runWithException(Workbench.java:2340)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:36)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4561)
+	at org.eclipse.ui.internal.StartupThreading.runWithoutExceptions(StartupThreading.java:94)
+	at org.eclipse.ui.internal.Workbench.initializeDefaultServices(Workbench.java:2335)
+	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2811)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:646)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+
+!ENTRY org.eclipse.jface 2 0 2020-06-10 12:39:13.081
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-06-10 12:39:13.081
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1f293cb7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5972e3a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:39:22.978
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:39:22.986
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@183435c0[org.springframework.tooling.boot.ls:1.18.0.202005250744(id=636)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:39:23.003
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:39:23.269
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-06-10 12:39:25.568
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'U:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-06-10 12:39:28.758
+!MESSAGE Cannot save config file 'FileBasedConfig[U:\.jgitconfig]'
+!STACK 0
+java.io.IOException: Creating directories for U:\ failed
+	at org.eclipse.jgit.util.FileUtils.mkdirs(FileUtils.java:396)
+	at org.eclipse.jgit.internal.storage.file.LockFile.lock(LockFile.java:130)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.save(FileBasedConfig.java:219)
+	at org.eclipse.jgit.util.FS$FileStoreAttributes.saveToConfig(FS.java:594)
+	at org.eclipse.jgit.util.FS$FileStoreAttributes.lambda$1(FS.java:370)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:39:32.207
+!MESSAGE Boot LS startup time from start to initialized: 9189ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:39:32.273
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.BNFvUoUTisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:39:32.289
+!MESSAGE Creating project sorter...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:39:32.300
+!MESSAGE Creating project sorter... DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:39:32.310
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:39:32.325
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:39:32.338
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:39:32.348
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:39:32.356
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.BNFvUoUT => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:39:32.365
+!MESSAGE classpath=110 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:39:32.376
+!MESSAGE buffering callback sts4.classpath.BNFvUoUT spring-boot-backend-apirest-angular9 false 110
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:39:32.383
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:39:32.394
+!MESSAGE classpath=121 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:39:32.405
+!MESSAGE buffering callback sts4.classpath.BNFvUoUT spring-boot-data-jpa false 121
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:39:32.412
+!MESSAGE executing callback sts4.classpath.BNFvUoUT 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:39:32.452
+!MESSAGE executing callback sts4.classpath.BNFvUoUT SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:41:01.199
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:41:01.214
+!MESSAGE classpath=110 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:41:01.225
+!MESSAGE buffering callback sts4.classpath.BNFvUoUT spring-boot-backend-apirest-angular9 false 110
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:41:01.233
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:41:01.245
+!MESSAGE classpath=121 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:41:01.256
+!MESSAGE buffering callback sts4.classpath.BNFvUoUT spring-boot-data-jpa false 121
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:41:01.264
+!MESSAGE executing callback sts4.classpath.BNFvUoUT 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 12:41:01.286
+!MESSAGE executing callback sts4.classpath.BNFvUoUT SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2020-06-10 12:41:05.300
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 20:26:29.034
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.BNFvUoUT
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 20:26:29.047
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.BNFvUoUT
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 20:26:29.057
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-06-10 20:26:29.067
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.BNFvUoUT => OK

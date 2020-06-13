@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
-import { CLIENTES } from '../data/clientes.json';
+//import { CLIENTES } from '../data/clientes.json';
 import { Cliente } from '../models/cliente.js';
 import { Observable, of, throwError } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpRequest, HttpEvent } from '@angular/common/http';
 import { environment } from 'src/environments/environment.js';
 import Swal from 'sweetalert2'
 import { Router } from '@angular/router';
+import { Region } from '../models/region.js';
 
 @Injectable({
   providedIn: 'root'
@@ -17,6 +18,10 @@ export class ClienteService {
   private httpHeaders = new HttpHeaders({ 'Content-Type': 'application/json' })
 
   constructor(private http: HttpClient, private router: Router) { }
+
+  getRegiones(): Observable<Region[]> {
+    return this.http.get<Region[]>(this.url + 'clientes/regiones');
+  }
 
   // getClientes(): Observable<Cliente[]> {
   //   return this.http.get<Cliente[]>(this.url + 'clientes');
@@ -91,18 +96,25 @@ export class ClienteService {
     );
   }
 
-  subirFoto(archivo: File, id): Observable<Cliente> {
+  subirFoto(archivo: File, id): Observable<HttpEvent<{}>> {
     let formData = new FormData();
     formData.append("archivo", archivo);
     formData.append("id", id);
-    return this.http.post(this.url + 'clientes/upload', formData).pipe(
-      map( (response: any) => response.cliente as Cliente ),
-      catchError(e => {
-        console.log(e.error.mensaje);
-        Swal.fire('Error al eliminar', e.error.mensaje, 'error');
-        return throwError(e);
-      })
-    );
+
+    const req = new HttpRequest('POST', this.url + 'clientes/upload', formData, {
+      reportProgress: true
+    });
+
+    return this.http.request(req);
+
+    // .pipe(
+    //   map( (response: any) => response.cliente as Cliente ),
+    //   catchError(e => {
+    //     console.log(e.error.mensaje);
+    //     Swal.fire('Error al eliminar', e.error.mensaje, 'error');
+    //     return throwError(e);
+    //   })
+    // );
   }
 
 }

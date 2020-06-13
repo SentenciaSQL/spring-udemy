@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'direcivas', component: DirectivasComponent },
   { path: 'clientes/form', component: FormComponent },
   { path: 'clientes/form/:id', component: FormComponent },
-  { path: 'clientes/ver/:id', component: DetalleComponent },
+  // { path: 'clientes/ver/:id', component: DetalleComponent },
   { path: '', pathMatch: 'full', redirectTo: 'clientes' },
   { path: '**', pathMatch: 'full', redirectTo: 'clientes' }
 ];

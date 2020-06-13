@@ -4,6 +4,7 @@ import { ClienteService } from 'src/app/service/cliente.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import Swal from 'sweetalert2'
 import { NgForm } from '@angular/forms';
+import { Region } from 'src/app/models/region';
 
 @Component({
   selector: 'app-form',
@@ -12,6 +13,7 @@ import { NgForm } from '@angular/forms';
 })
 export class FormComponent implements OnInit {
   public cliente: Cliente = new Cliente();
+  public regiones: Region[];
   public titulo: string = "Crear Cliente";
 
   public errores: string[];
@@ -28,7 +30,9 @@ export class FormComponent implements OnInit {
       if(id) {
         this.clienteService.getClienete(id).subscribe( (cliente) => this.cliente = cliente );
       }
-    })
+    });
+
+    this.clienteService.getRegiones().subscribe(regiones => this.regiones = regiones );
   }
 
   public create(form: NgForm): void {
@@ -52,6 +56,14 @@ export class FormComponent implements OnInit {
       console.log("Codigo del error desde el backend: " + err.status );
       console.log(err.error.errors );
     })
+  }
+
+  public compararRegion(o1: Region, o2: Region) {
+    if(o1 === undefined && o2 === undefined) {
+      return true;
+    }
+    
+    return o1 === null || o2 === null || o1 === undefined || o2 === undefined ? false : o1.id === o2.id;
   }
 
 }
