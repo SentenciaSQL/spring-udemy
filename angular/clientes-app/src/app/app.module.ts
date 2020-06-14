@@ -16,6 +16,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
 import { MAT_DATE_LOCALE } from '@angular/material/core';
 import { DetalleComponent } from './components/clientes/detalle/detalle.component';
+import { LoginComponent } from './components/usuarios/login/login.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { DetalleComponent } from './components/clientes/detalle/detalle.componen
     HeaderComponent,
     FormComponent,
     PaginatorComponent,
-    DetalleComponent
+    DetalleComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

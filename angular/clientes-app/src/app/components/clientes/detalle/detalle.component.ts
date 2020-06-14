@@ -5,6 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 import Swal from 'sweetalert2'
 import { HttpEventType } from '@angular/common/http';
 import { ModalService } from 'src/app/service/modal.service';
+import { AuthService } from 'src/app/service/auth.service';
 
 @Component({
   selector: 'app-detalle-cliente',
@@ -17,7 +18,7 @@ export class DetalleComponent implements OnInit {
   fotoSeleccionada: File;
   progreso: number = 0;
 
-  constructor(private clienteService: ClienteService, private activatedRoute: ActivatedRoute, public modalService: ModalService) { }
+  constructor(private clienteService: ClienteService, private activatedRoute: ActivatedRoute, public modalService: ModalService, public authService: AuthService) { }
 
   ngOnInit(): void {
     // this.activatedRoute.paramMap.subscribe(params => {
